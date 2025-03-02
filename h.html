@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+    <main>
+        <div class="max-w-7xl mx-auto bg-white p-6 rounded-lg shadow-md ">
+            <!-- Header -->
+            <header
+                class="flex  justify-between bg-[#F4F7FF] items-center mb-6 p-4 max-w-7xl mx-auto rounded-lg shadow-md">
+                <div class="flex items-center space-x-2">
+                    <div class="bg-blue-600 text-white p-2 rounded-lg">
+                        <span class="font-bold text-lg">D</span>
+                    </div>
+                    <h1 class="text-2xl font-bold text-gray-800">Dev<span class="text-blue-600">Board</span></h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-semibold">
+                        <div class="flex gap-2">
+                            <h1>✅</h1>
+                            <button id="headerCounter"> 23</button>
+                        </div>
+
+                    </div>
+                    <div>
+                        <img src="image/Group 8.png" alt="">
+                    </div>
+                </div>
+            </header>
+
+
+
+            <!-- Main Content -->
+            <div class="flex gap-6">
+                <div class="w-11/12">
+                    <div class="flex justify-between gap-6 h-[120px]   rounded-lg mb-4">
+                        <div class="flex items-center justify-center  bg-[#F4F7FF] flex-1 rounded-lg p-4">
+                            <div class="flex items-center ">
+                                <div>
+                                    <img src="image/Group 13.png" alt="">
+                                </div>
+                                <div>
+                                    <h3>Task Assigned </h3>
+                                    <button id="taskCounter" class="font-bold text-xl">06</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-center justify-center gap-3 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl font-bold p-4 flex-[2]">
+                            <div>
+                                <img src="image/fi_18577309.png" alt="">
+                            </div>
+                            <h1 class="text-white font-bold text-xl">
+                                Discover Something New Today!
+                            </h1>
+                        </div>
+                        <div class="flex items-center justify-center gap-3 bg-[#F4F7FF] flex-1 rounded-lg p-4">
+                            <div>
+                                <img src="image/Group 14.png" alt="">
+                            </div>
+                            <h3>Wed,<br> <span class="font-semibold">Jul 28 2025</span></h3>
+                        </div>
+                    </div>
+
+
+                    <!-- Task List -->
+
+                    <div class="flex-1 grid grid-cols-3 gap-6">
+                        <!-- 01 -->
+                        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                            <div class="bg-white w-2/5 rounded-lg mb-2">
+                                <h1 class="text-sm p-2  text-center text-gray-500">ShopEase</h1>
+                            </div>
+                            <h2 class="text-lg mb-4 font-semibold">Fix Mobile Button Issue</h2>
+                            <p
+                                class="text-gray-600 mb-5 bg-white h-[80px] text-center flex items-center justify-center text-sm rounded-lg shadow-sm">
+                                Debug using Chrome DevTools...
+                            </p>
+
+                            <div class="flex justify-between justify-center items-center">
+                                <div>
+                                    <h3 class="text-sm text-gray-500 mt-2">Deadline </h3>
+                                    <h3 class="text-sm font-semibold mt-2">21 March 2025 </h3>
+                                </div>
+                                <button
+                                    class="bg-blue-600 text-white px-3 w-[110px] h-[30px] py-1 rounded-full text-sm mt-2 completed-btn"
+                                    data-task-id="1">Completed</button>
+                            </div>
+                        </div>
+                        <!-- 02 -->
+                        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                            <div class="bg-white w-2/5 rounded-lg mb-2">
+                                <h1 class="text-sm p-2  text-center text-gray-500">CloudSync</h1>
+                            </div>
+                            <h2 class="text-lg mb-4 font-semibold">Add Dark Mode</h2>
+                            <p
+                                class="text-gray-600 mb-5 bg-white h-[80px] text-center flex items-center justify-center text-sm rounded-lg shadow-sm">
+                                Store the user's preference in localStorage, update CSS variable
+                            </p>
+
+                            <div class="flex justify-between justify-center items-center">
+                                <div>
+                                    <h3 class="text-sm text-gray-500 mt-2">Deadline </h3>
+                                    <h3 class="text-sm font-semibold mt-2">21 March 2025 </h3>
+                                </div>
+                                <button
+                                    class="bg-blue-600 text-white px-3 w-[110px] h-[30px] py-1 rounded-full text-sm mt-2 completed-btn"
+                                    data-task-id="2">Completed</button>
+                            </div>
+                        </div>
+
+                        <!-- 03 -->
+                        <div class="bg-[#F4F7FF] p-4 rounded-lg shadow-md">
+                            <div class="bg-white w-2/5 rounded-lg mb-2">
+                                <h1 class="text-sm p-2  text-center text-gray-500">SwiftPay</h1>
+                            </div>
+                            <h2 class="text-lg mb-4 font-semibold">Optimize Home page </h2>
+                            <p
+                                class="text-gray-600 mb-5 bg-white h-[80px] text-center flex items-center justify-center text-sm rounded-lg shadow-sm">
+                                Debug using Chrome DevTools...
+                            </p>
+
+                            <div class="flex justify-between justify-center items-center">
+                                <div>
+                                    <h3 class="text-sm text-gray-500 mt-2">Deadline </h3>
+                                    <h3 class="text-sm font-semibold mt-2">21 March 2025 </h3>
+                                </div>
+                                <button
+                                    class="bg-blue-600 text-white px-3 w-[110px] h-[30px] py-1 rounded-full text-sm mt-2 completed-btn"
+                                    data-task-id="3">Completed</button>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+
+                <!-- Activity Log Section -->
+                <div class="bg-white p-4 rounded-lg shadow-md mt-6">
+                    <div class="flex gap-2 justify-center items-center">
+                        <div>
+                            <img src="image/fi-sr-time-past.png" alt="">
+                        </div>
+                        <div>
+                            <button class="text-lg font-semibold activity-log">Activity Log</button>
+                        </div>
+                    </div>
+
+                    <!-- ✅ নতুন Activity Log দেখানোর জন্য একটি ডিভ -->
+                    <div id="activityContainer" class="mt-3 bg-gray-50 p-3 rounded-lg shadow-sm"></div>
+
+                    <!-- Clear History Button -->
+                    <div class="flex justify-center mt-3">
+                        <button id="clearHistory" class="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">Clear
+                            History</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const completedButtons = document.querySelectorAll(".completed-btn");
+            const taskCounter = document.querySelector("#taskCounter"); // Task Assigned (06)
+            const headerCounter = document.querySelector("#headerCounter"); // Header Counter (23)
+
+            completedButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const taskId = this.dataset.taskId;
+                    const lastClicked = localStorage.getItem(`task_${taskId}_lastClicked`);
+                    const now = new Date().getTime();
+
+
+                    localStorage.setItem(`task_${taskId}_lastClicked`, now);
+                    alert("Board updated successfully!");
+
+                    // Change button color
+                    this.style.backgroundColor = "gray";
+                    this.innerText = "Completed";
+                    this.disabled = true;
+
+                    // Update Task Assigned count
+                    let currentTaskCount = parseInt(taskCounter.innerText);
+                    if (currentTaskCount > 0) {
+                        taskCounter.innerText = currentTaskCount - 1;
+                    }
+
+                    // Update Header Counter count
+                    let currentHeaderCount = parseInt(headerCounter.innerText);
+                    headerCounter.innerText = currentHeaderCount + 1;
+                });
+            });
+        });
+    </script> -->
+    <!-- <script src="js/java.js"></script> -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const completedButtons = document.querySelectorAll(".completed-btn");
+            const taskCounter = document.querySelector("#taskCounter"); // Task Assigned (06)
+            const headerCounter = document.querySelector("#headerCounter"); // Header Counter (23)
+            const activityContainer = document.querySelector("#activityContainer"); // Activity Log Container
+            const clearHistoryBtn = document.querySelector("#clearHistory"); // Clear History Button
+    
+            completedButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const taskId = this.dataset.taskId;
+                    const taskName = this.parentElement.parentElement.querySelector("h2").innerText; // Task Name
+                    const now = new Date();
+                    const timeString = now.toLocaleTimeString(); // Format: HH:MM:SS AM/PM
+    
+                    // Store in LocalStorage
+                    localStorage.setItem(`task_${taskId}_lastClicked`, now.getTime());
+                    alert("Board updated successfully!");
+    
+                    // Change button color
+                    this.style.backgroundColor = "gray";
+                    this.innerText = "Completed";
+                    this.disabled = true;
+    
+                    // Update Task Assigned count
+                    let currentTaskCount = parseInt(taskCounter.innerText);
+                    if (currentTaskCount > 0) {
+                        taskCounter.innerText = currentTaskCount - 1;
+                    }
+    
+                    // Update Header Counter count
+                    let currentHeaderCount = parseInt(headerCounter.innerText);
+                    headerCounter.innerText = currentHeaderCount + 1;
+    
+                    // ✅ Add Activity Log Entry
+                    const logEntry = document.createElement("p");
+                    logEntry.classList.add("text-sm", "text-gray-700", "bg-white", "p-2", "rounded-lg", "shadow-sm", "mt-2");
+                    logEntry.innerHTML = `✅ You have completed the task '<b>${taskName}</b>' at <b>${timeString}</b>`;
+                    activityContainer.prepend(logEntry);
+                });
+            });
+    
+            // ✅ Clear History Button Functionality
+            clearHistoryBtn.addEventListener("click", function () {
+                activityContainer.innerHTML = ""; // Clear the log
+            });
+        });
+    </script>
+</body>
+
+</html>
