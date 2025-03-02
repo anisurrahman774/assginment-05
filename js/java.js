@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
             logEntry.innerHTML = `✅ You have completed the task '<b>${taskName}</b>' at <b>${timeString}</b>`;
             activityContainer.prepend(logEntry);
 
-            // **Check if all tasks are completed**
+            
             const remainingTasks = document.querySelectorAll(".completed-btn:not([disabled])");
             if (remainingTasks.length === 0) {
                 setTimeout(() => {
@@ -52,28 +52,22 @@ document.addEventListener("DOMContentLoaded", function () {
 // background color change----------------------------
 
 document.getElementById("changeBgDiv").addEventListener("click", function () {
-    // র্যান্ডম রঙের জন্য HEX কালার জেনারেট করা
+    
     const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-
-    // বডির ব্যাকগ্রাউন্ড কালার পরিবর্তন
     document.body.style.backgroundColor = randomColor;
 });
 
 
 // real time date -------------------------------------------------
 function updateDate() {
-    // বর্তমান তারিখ পাওয়ার জন্য JavaScript Date অবজেক্ট ব্যবহার
     const today = new Date();
 
-    // দিন, মাস ও বছর বের করা
     const options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
-    const formattedDate = today.toLocaleDateString('en-US', options); // ইংরেজি ফরম্যাটে তারিখ
+    const formattedDate = today.toLocaleDateString('en-US', options); 
 
-    // HTML-এ তারিখ সেট করা
     document.getElementById("currentDate").innerText = formattedDate;
 }
 
-// পেজ লোড হলে তারিখ আপডেট হবে
 updateDate();
 
 
